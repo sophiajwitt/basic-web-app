@@ -17,6 +17,12 @@ export default function QueryProcessor(query: string): string {
       "switt"
     );
   }
+  
+  if (query.toLowerCase().includes("did you eat breakfast?")) {
+    return (
+      "yes"
+    );
+  }
 
   if (query.toLowerCase().includes("this is a test")) {
     return (
