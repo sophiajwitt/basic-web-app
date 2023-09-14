@@ -25,4 +25,12 @@ describe("QueryProcessor", () => {
             "switt"
           ));
     });
+
+    test('should return test', () => {
+        const query = "this is a test";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "test"
+          ));
+    });
 });
