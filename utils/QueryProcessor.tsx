@@ -110,11 +110,12 @@ export default function QueryProcessor(query: string): string {
     const num_three = parseInt(query_array[9]);
     const num_four = parseInt(query_array[10]);
     const num_five = parseInt(query_array[11]);
-    const num_array = [];
-    let answer = 0;
-    for (var i=0; i < 5; i++) {
-      if (isPrime(i)) {
-        const answer = i;
+    const num_array = [num_one, num_two, num_three, num_four, num_five];
+    let answer: number[] = [];
+    for (let i = 0; i < num_array.length; i++) {
+      const num = num_array[i];
+      if (isPrime(num)) {
+        answer.push(num);
       }
     }
     return (
