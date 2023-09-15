@@ -20,7 +20,7 @@ export default function QueryProcessor(query: string): string {
   
   if (query.toLowerCase().includes("did you eat breakfast?")) {
     return (
-      "yes"
+      "no"
     );
   }
 
