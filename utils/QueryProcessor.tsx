@@ -58,17 +58,25 @@ export default function QueryProcessor(query: string): string {
     const num_five = parseInt(query_array[17]);
     const num_six = parseInt(query_array[18]);
     const num_seven = parseInt(query_array[19]);
-    const num_array = [];
-    let answer = 0;
-    for (var i=0; i < 8; i++) {
-      if (isSquareAndCube(i)) {
-        const answer = i;
+    const num_array = [num_one, num_two, num_three, num_four, num_five, num_six, num_seven];
+    let answer: number[] = [];
+    for (let i = 0; i < num_array.length; i++) {
+      const num = num_array[i];
+      if (isSquareAndCube(num)) {
+        answer.push(num);
       }
     }
+    // let answer = 0;
+    // for (var i=0; i < 8; i++) {
+    //   if (isSquareAndCube(i)) {
+    //     const answer = i;
+    //   }
+    // }
     return (
       answer.toString()
     );
   }
+
   function isSquareAndCube(num: number) {
     // Check if num is a perfect square
     const squareRoot = Math.sqrt(num);
