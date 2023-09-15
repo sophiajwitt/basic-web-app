@@ -44,8 +44,9 @@ export default function QueryProcessor(query: string): string {
     const query_array = query.toLowerCase().split(" ");
     const num_one = parseInt(query_array[2]);
     const num_two = parseInt(query_array[4]);
+    const num_three = parseInt(query_array[6]);
     return (
-      (num_one + num_two).toString()
+      (num_one + num_two + num_three).toString()
     );
   }
 
@@ -66,12 +67,6 @@ export default function QueryProcessor(query: string): string {
         answer.push(num);
       }
     }
-    // let answer = 0;
-    // for (var i=0; i < 8; i++) {
-    //   if (isSquareAndCube(i)) {
-    //     const answer = i;
-    //   }
-    // }
     return (
       answer.toString()
     );
