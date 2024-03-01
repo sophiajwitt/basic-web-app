@@ -13,9 +13,13 @@ export default function QueryProcessor(query: string): string {
     const num_one = parseInt(query_array[2]);
     const num_two = parseInt(query_array[4]);
     return (
-  // todo add numbers together and convert to string
-      );
-    }
+      (num_one + num_two).toString()
+    );
+  }
+
+  
+
+  
 
 
   return "";
