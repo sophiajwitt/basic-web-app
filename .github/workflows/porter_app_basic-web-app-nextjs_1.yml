@@ -20,6 +20,7 @@ jobs:
               env:
                 PORTER_APP_NAME: basic-web-app-nextjs
                 PORTER_CLUSTER: "1"
+                PORTER_DEPLOYMENT_TARGET_ID: 1cd06bf8-e7af-4611-bcfb-4d04ebb5ae7a
                 PORTER_HOST: https://witt.withporter.run
                 PORTER_PR_NUMBER: ${{ github.event.number }}
                 PORTER_PROJECT: "1"
