@@ -1,7 +1,7 @@
 "on":
     push:
         branches:
-            - main
+            - extreme-startup-complete
 name: Deploy to basic-web-app-nextjs
 jobs:
     porter-deploy:
