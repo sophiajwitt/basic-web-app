@@ -20,7 +20,7 @@ jobs:
               env:
                 PORTER_APP_NAME: basic-web-app
                 PORTER_CLUSTER: "1"
-                PORTER_DEPLOYMENT_TARGET_ID: 0f7d13c3-5953-4475-8ef6-ae1b998f402b
+                PORTER_DEPLOYMENT_TARGET_ID: dcfdfb0e-087d-46a1-a420-e15b9a9922ba
                 PORTER_HOST: https://witt.withporter.run
                 PORTER_PROJECT: "1"
                 PORTER_TAG: ${{ steps.vars.outputs.sha_short }}
