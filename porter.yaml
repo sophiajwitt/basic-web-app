@@ -1,0 +1,19 @@
+version: v2
+name: basic-web-app
+services:
+  - name: web
+    run: npm start
+    type: web
+    port: 3000
+    cpuCores: 0.1
+    ramMegabytes: 400
+    instances: 1
+    domains: []
+    loadBalancers:
+      - public_lb
+build:
+  method: pack
+  context: ./
+  builder: heroku/builder:22
+  buildpacks:
+    - heroku/nodejs
